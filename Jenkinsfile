@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Clone') {
             steps {
                 git 'https://github.com/Manthan0019/Restaurant_menu_website.git'
