@@ -5,23 +5,27 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/Manthan0019/Restaurant_menu_website.git'
+                echo 'Cloning repository...'
             }
         }
 
-        stage('Build Docker') {
+        stage('Build') {
             steps {
-                sh 'docker build -t restaurant-app .'
+                echo 'No build required for HTML'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Checking index.html'
+                sh 'if [ -f index.html ]; then echo "File exists"; else exit 1; fi'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh '''
-                docker stop restaurant-container || true
-                docker rm restaurant-container || true
-                docker run -d -p 5000:5000 --name restaurant-container restaurant-app
-                '''
+                echo 'Deploying to XAMPP htdocs'
+                sh 'cp -r * /Applications/XAMPP/htdocs/'
             }
         }
     }
