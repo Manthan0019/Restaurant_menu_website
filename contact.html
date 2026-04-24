@@ -9,21 +9,19 @@
 
 <h1>Contact Us</h1>
 
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    {% for msg in messages %}
-      <p style="color:red;">{{ msg }}</p>
-    {% endfor %}
-  {% endif %}
-{% endwith %}
+</head>
 
-<form method="POST">
+<body>
+
+<h1>Contact Us</h1>
+
+<form onsubmit="return validateForm()">
 
 Name:
-<input type="text" name="name"><br><br>
+<input type="text" id="name"><br><br>
 
 Email:
-<input type="email" name="email"><br><br>
+<input type="email" id="email"><br><br>
 
 <input type="submit" value="Submit">
 
