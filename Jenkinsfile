@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying to XAMPP htdocs'
-                sh 'cp -r * /Applications/XAMPP/htdocs/'
+                sh 'cp -r * /Applications/XAMPP/htdocs/restaurant_menu_website/'
             }
         }
     }
