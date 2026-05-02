@@ -1,107 +1,183 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* BODY */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f3e9df, #e8d5c4);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5eee6, #e8d5c4);
     color: #2c2c2c;
 }
 
-/* Navbar */
+/* CONTAINER (IMPORTANT FOR ALIGNMENT) */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
 header {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: rgba(255,255,255,0.6);
-    backdrop-filter: blur(10px);
 }
 
+/* LOGO */
 header h1 {
     font-size: 22px;
     font-weight: 600;
 }
 
-/* Nav links */
+/* NAV */
 nav a {
     margin-left: 20px;
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    padding: 8px 14px;
+    padding: 8px 16px;
     border-radius: 20px;
     transition: 0.3s;
 }
 
-/* Active button (Home) */
 nav a.active,
 nav a:hover {
     background: #c0392b;
     color: white;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px;
+    padding: 60px 0;
 }
 
-/* Left Card */
+.hero-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LEFT CARD */
 .hero-left {
-    background: #f7f1eb;
+    background: #ffffff;
     padding: 40px;
     border-radius: 15px;
-    width: 55%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    flex: 1;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .hero-left small {
     color: #c0392b;
     letter-spacing: 2px;
-}
-
-.hero-left h2 {
-    font-size: 42px;
-    margin: 15px 0;
-    font-weight: 700;
-}
-
-.hero-left p {
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Button */
-.btn {
-    background: #c0392b;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
     font-weight: 500;
 }
 
-/* Right Card */
+.hero-left h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.hero-left p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    background: #c0392b;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a93226;
+}
+
+/* RIGHT CARD */
 .hero-right {
-    background: #f7f1eb;
+    background: #ffffff;
     padding: 30px;
     border-radius: 15px;
-    width: 35%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    flex: 0.6;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .hero-right h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .hero-right p {
     margin-bottom: 10px;
     color: #555;
+}
+
+/* MENU SECTION */
+.menu-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* MENU CARD */
+.menu-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+/* TEXT */
+.menu-card h3 {
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* PRICE */
+.menu-card span {
+    font-weight: bold;
+    color: #c0392b;
+    font-size: 18px;
+}
+
+/* FOOTER (OPTIONAL BUT MAKES IT COMPLETE) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.05);
+    margin-top: 40px;
 }
