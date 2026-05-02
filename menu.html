@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Menu</title>
+<meta charset="UTF-8">
+<title>Menu - Food Palace</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Our Menu</h1>
+    <h1>Food Palace 🍽️</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#" class="active">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<div class="menu-container">
+<section class="menu-section">
 
-    <div class="menu-item">
-        <p>Pizza</p>
-        <span>₹250</span>
+    <h2 class="menu-title">Our Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <h3>Pizza</h3>
+            <p>Delicious cheesy pizza with fresh toppings</p>
+            <span>₹250</span>
+        </div>
+
+        <div class="menu-card">
+            <h3>Burger</h3>
+            <p>Juicy burger with crispy patty</p>
+            <span>₹150</span>
+        </div>
+
+        <div class="menu-card">
+            <h3>Pasta</h3>
+            <p>Creamy pasta with Italian flavors</p>
+            <span>₹200</span>
+        </div>
+
+        <div class="menu-card">
+            <h3>Sandwich</h3>
+            <p>Fresh and healthy sandwich</p>
+            <span>₹120</span>
+        </div>
+
     </div>
 
-    <div class="menu-item">
-        <p>Burger</p>
-        <span>₹150</span>
-    </div>
-
-    <div class="menu-item">
-        <p>Pasta</p>
-        <span>₹200</span>
-    </div>
-
-    <div class="menu-item">
-        <p>Sandwich</p>
-        <span>₹120</span>
-    </div>
-
-</div>
-
-<div style="text-align:center;">
-    <a href="index.html">← Back to Home</a>
-</div>
+</section>
 
 </body>
 </html>
