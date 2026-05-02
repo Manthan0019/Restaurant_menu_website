@@ -1,27 +1,108 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    text-align: center;
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background: #4f0202;
+    background: linear-gradient(135deg, #4f0202, #8b0000);
     color: white;
-    padding: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navbar */
+nav {
+    margin-top: 10px;
 }
 
 nav a {
     color: white;
-    margin: 15px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Section */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Hero Text */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+}
+
+/* Menu Page */
+.menu-container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.menu-item {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.02);
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+/* Buttons / Links */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #8b0000;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-section {
+/* About / Contact */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
